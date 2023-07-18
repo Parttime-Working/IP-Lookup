@@ -1,0 +1,12 @@
+# Multi-layer with B-Tree
+* IPv4: 所有方法皆有16-segment table
+
+## Usage
+* filename  :   multilayer.c
+* Compile   :   `gcc multilayer_ipv4 -o multilayer`
+* Execute   :   `./multilayer rrc_all_90build.txt rrc_all_10insert.txt`
+* Note:
+    * 若要測量10%miss的時間，Execute需改成如下:
+        ```
+        ./multilayer.c rrc_all.txt fail_trace.txt
+        ```
